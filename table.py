@@ -15,10 +15,10 @@ cursor = conn.cursor()
 # SQL statement to create a table
 
 create_table_query = """
-ALTER TABLE my_table ADD
-    count INT
-
-
+CREATE TABLE IF NOT EXISTS my_table (
+    id INT,
+    name VARCHAR(50)
+);
 """
 
 # Execute the query
