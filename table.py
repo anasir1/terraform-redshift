@@ -16,7 +16,7 @@ cursor = conn.cursor()
 
 create_table_query = """
 ALTER TABLE my_table ADD
-    num INT
+    count INT
 
 
 """
